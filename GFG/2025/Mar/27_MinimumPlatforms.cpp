@@ -20,7 +20,6 @@ public:
             }
             ans = max(ans, count);
         }
-        ans = max(ans, count);
         return ans;
     }
 };
