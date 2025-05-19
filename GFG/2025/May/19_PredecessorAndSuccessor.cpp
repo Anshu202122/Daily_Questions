@@ -5,8 +5,8 @@ public:
     {
         vector<Node *> ans;
         Node *node = new Node(-1);
-        Node *pre = NULL;
-        Node *suc = NULL;
+        Node* predecessor = NULL;
+        Node* successor = NULL;
         Node *temp = root;
         while (temp)
         {
@@ -16,17 +16,17 @@ public:
             }
             else
             {
-                pre = temp;
+                predecessor = temp;
                 temp = temp->right;
             }
         }
-        if (pre == NULL)
+        if (predecessor == NULL)
         {
             ans.push_back(node);
         }
         else
         {
-            ans.push_back(pre);
+            ans.push_back(predecessor);
         }
         while (root)
         {
@@ -36,17 +36,17 @@ public:
             }
             else
             {
-                suc = root;
+                successor = root;
                 root = root->left;
             }
         }
-        if (suc == NULL)
+        if (successor == NULL)
         {
             ans.push_back(node);
         }
         else
         {
-            ans.push_back(suc);
+            ans.push_back(successor);
         }
         return ans;
     }
