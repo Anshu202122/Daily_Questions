@@ -28,7 +28,7 @@ public:
             }
             else
             {
-                s[i];
+                minChar = s[i];
             }
             while (!t.empty() && t.back() <= minChar)
             {
