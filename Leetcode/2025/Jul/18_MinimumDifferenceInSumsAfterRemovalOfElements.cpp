@@ -19,6 +19,7 @@ public:
             {
                 minSum -= maxpq.top();
                 maxpq.pop();
+                cnt--;
             }
             leftMin[i] = minSum;
         }
@@ -32,6 +33,7 @@ public:
             {
                 maxSum -= minpq.top();
                 minpq.pop();
+                cnt--;
             }
             rightMax[i] = maxSum;
         }
