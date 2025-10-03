@@ -2,7 +2,7 @@ class Solution {
 public:
     int n;
     vector<string> ans;
-    vector<string> keys = {"",    "",    "abc",  "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    vector<string> keys = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
     void solve(vector<int>& arr, string temp, int i) {
         if (i == n) {
             ans.push_back(temp);
